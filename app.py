@@ -1,3 +1,4 @@
+'''
 import os, sys, json, bcrypt, time, hashlib
 import face_recognition
 import cv2
@@ -168,4 +169,4 @@ if __name__ == "__main__":
     win = App()
     win.show()
     sys.exit(app.exec_())
-
+'''
