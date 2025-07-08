@@ -1,0 +1,12 @@
+# Ignore virtual environments
+venv/
+
+# Python-related ignores
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.db
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
