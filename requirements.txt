@@ -4,3 +4,130 @@ opencv-python==4.8.1.78
 face-recognition==1.3.0
 numpy==1.24.3
 bcrypt==4.0.1cl
+
+pip install cmake
+pip install dlib
+pip install face_recognition
+
+pip install pyqt5 pillow opencv-python numpy face_recognition bcrypt
+
+
+ERROR 
+"""(venv) PS C:\Users\tharu\OneDrive\Pictures\PhotoMemoriesApp> pip install pyqt5 pillow opencv-python numpy face_recognition bcrypt
+Requirement already satisfied: pyqt5 in c:\users\tharu\onedrive\pictures\photomemoriesapp\venv\lib\site-packages (5.15.11)
+Requirement already satisfied: pillow in c:\users\tharu\onedrive\pictures\photomemoriesapp\venv\lib\site-packages (11.3.0)
+Collecting opencv-python
+  Using cached opencv_python-4.12.0.88-cp37-abi3-win_amd64.whl.metadata (19 kB)
+Collecting numpy
+  Using cached numpy-2.2.6-cp310-cp310-win_amd64.whl.metadata (60 kB)
+Collecting face_recognition
+  Using cached face_recognition-1.3.0-py2.py3-none-any.whl.metadata (21 kB)
+Requirement already satisfied: bcrypt in c:\users\tharu\onedrive\pictures\photomemoriesapp\venv\lib\site-packages (4.3.0)
+Requirement already satisfied: PyQt5-sip<13,>=12.15 in c:\users\tharu\onedrive\pictures\photomemoriesapp\venv\lib\site-packages (from pyqt5) (12.17.0)
+Requirement already satisfied: PyQt5-Qt5<5.16.0,>=5.15.2 in c:\users\tharu\onedrive\pictures\photomemoriesapp\venv\lib\site-packages (from pyqt5) (5.15.2)
+Collecting face-recognition-models>=0.3.0 (from face_recognition)
+  Using cached face_recognition_models-0.3.0-py2.py3-none-any.whl
+Collecting Click>=6.0 (from face_recognition)
+  Using cached click-8.2.1-py3-none-any.whl.metadata (2.5 kB)
+Collecting dlib>=19.7 (from face_recognition)
+  Using cached dlib-20.0.0.tar.gz (3.3 MB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting colorama (from Click>=6.0->face_recognition)
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Using cached opencv_python-4.12.0.88-cp37-abi3-win_amd64.whl (39.0 MB)
+Using cached numpy-2.2.6-cp310-cp310-win_amd64.whl (12.9 MB)
+Using cached face_recognition-1.3.0-py2.py3-none-any.whl (15 kB)
+Using cached click-8.2.1-py3-none-any.whl (102 kB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Building wheels for collected packages: dlib
+  Building wheel for dlib (pyproject.toml) ... error
+  error: subprocess-exited-with-error
+
+  × Building wheel for dlib (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [73 lines of output]
+      running bdist_wheel
+      running build
+      running build_ext
+      <string>:163: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+      Building extension for Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+      Invoking CMake setup: 'cmake C:\Users\tharu\AppData\Local\Temp\pip-install-2sapfqyh\dlib_276128d9392b4e24b1f41f82fa3f07e4\tools\python -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\tharu\AppData\Local\Temp\pip-install-2sapfqyh\dlib_276128d9392b4e24b1f41f82fa3f07e4\build\lib.win-amd64-cpython-310 -DPYTHON_EXECUTABLE=C:\Users\tharu\OneDrive\Pictures\PhotoMemoriesApp\venv\Scripts\python.exe -DDLIB_USE_FFMPEG=OFF -DCMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE=C:\Users\tharu\AppData\Local\Temp\pip-install-2sapfqyh\dlib_276128d9392b4e24b1f41f82fa3f07e4\build\lib.win-amd64-cpython-310 -A x64'
+      -- Building for: NMake Makefiles
+      CMake Error at CMakeLists.txt:5 (message):
+
+
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        You must use Visual Studio to build a python extension on windows.  If you
+        are getting this error it means you have not installed Visual C++.  Note
+        that there are many flavors of Visual Studio, like Visual Studio for C#
+        development.  You need to install Visual Studio for C++.
+
+
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+      -- Configuring incomplete, errors occurred!
+      Traceback (most recent call last):
+        File "C:\Users\tharu\OneDrive\Pictures\PhotoMemoriesApp\venv\lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 353, in <module>
+          main()
+        File "C:\Users\tharu\OneDrive\Pictures\PhotoMemoriesApp\venv\lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+        File "C:\Users\tharu\OneDrive\Pictures\PhotoMemoriesApp\venv\lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\_in_process.py", line 251, in build_wheel
+          return _build_backend().build_wheel(wheel_directory, config_settings,
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\build_meta.py", line 435, in build_wheel
+          return _build(['bdist_wheel', '--dist-info-dir', str(metadata_directory)])
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\build_meta.py", line 423, in _build    
+          return self._build_with_temp_dir(
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\build_meta.py", line 404, in _build_with_temp_dir
+          self.run_setup()
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\build_meta.py", line 317, in run_setup 
+          exec(code, locals())
+        File "<string>", line 243, in <module>
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\__init__.py", line 115, in setup       
+          return distutils.core.setup(**attrs)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\core.py", line 186, in setup
+          return run_commands(dist)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\core.py", line 202, in run_commands
+          dist.run_commands()
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\dist.py", line 1002, in run_commands
+          self.run_command(cmd)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\dist.py", line 1102, in run_command    
+          super().run_command(command)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\dist.py", line 1021, in run_command
+          cmd_obj.run()
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\command\bdist_wheel.py", line 370, in run
+          self.run_command("build")
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\cmd.py", line 357, in run_command
+          self.distribution.run_command(command)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\dist.py", line 1102, in run_command    
+          super().run_command(command)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\dist.py", line 1021, in run_command
+          cmd_obj.run()
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\command\build.py", line 135, in run
+          self.run_command(cmd_name)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\cmd.py", line 357, in run_command
+          self.distribution.run_command(command)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\dist.py", line 1102, in run_command    
+          super().run_command(command)
+        File "C:\Users\tharu\AppData\Local\Temp\pip-build-env-d7c92w9t\overlay\Lib\site-packages\setuptools\_distutils\dist.py", line 1021, in run_command
+          cmd_obj.run()
+        File "<string>", line 168, in run
+        File "<string>", line 206, in build_extension
+        File "C:\Users\tharu\AppData\Local\Programs\Python\Python310\lib\subprocess.py", line 369, in check_call
+          raise CalledProcessError(retcode, cmd)
+      subprocess.CalledProcessError: Command '['cmake', 'C:\\Users\\tharu\\AppData\\Local\\Temp\\pip-install-2sapfqyh\\dlib_276128d9392b4e24b1f41f82fa3f07e4\\tools\\python', '-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\\Users\\tharu\\AppData\\Local\\Temp\\pip-install-2sapfqyh\\dlib_276128d9392b4e24b1f41f82fa3f07e4\\build\\lib.win-amd64-cpython-310', '-DPYTHON_EXECUTABLE=C:\\Users\\tharu\\OneDrive\\Pictures\\PhotoMemoriesApp\\venv\\Scripts\\python.exe', '-DDLIB_USE_FFMPEG=OFF', '-DCMAKE_LIBRARY_OUTPUT_DIRECTORY_RELEASE=C:\\Users\\tharu\\AppData\\Local\\Temp\\pip-install-2sapfqyh\\dlib_276128d9392b4e24b1f41f82fa3f07e4\\build\\lib.win-amd64-cpython-310', '-A', 'x64']' returned non-zero exit status 1.
+      [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for dlib
+Failed to build dlib
+
+[notice] A new release of pip is available: 24.2 -> 25.1.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (dlib)
+(venv) PS C:\Users\tharu\OneDrive\Pictures\PhotoMemoriesApp>    """
